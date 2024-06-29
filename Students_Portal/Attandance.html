@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Attandance.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1 class="institution-name">IAT Technologies</h1>
+        <div class="profile-menu">
+            <span id="studentName">Student Name</span>
+            <img src="profile-image.png" alt="Profile Image" class="profile-image" id="profileButton">
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#">Profile</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="content-container">
+            <div class="container" id="attendance">
+                <h2>Attendance</h2>
+                <div class="timeline">
+                    <!-- Attendance timeline will be generated here -->
+                </div>
+            </div>
+            <div class="container">
+                <h2>Task Points</h2>
+                <canvas id="taskChart"></canvas>
+            </div>
+            <div class="container">
+                <h2>Assessment Points</h2>
+                <canvas id="assessmentChart"></canvas>
+            </div>
+            <div class="container" id="projectMarks">
+                <h2>Project Marks</h2>
+                <canvas id="projectChart"></canvas>
+                <p id="averageMarks"></p>
+            </div>
+        </div>
+    </div>
+    <script src="Attandance.js"></script>
+</body>
+</html>

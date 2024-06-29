@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="IAT Technologies Logo" class="logo">
+        <h1 class="institution-name">IAT Technologies</h1>
+        <div class="profile-menu">
+            <span id="studentName">Student Name</span>
+            <img src="profile-image.png" alt="Profile Image" class="profile-image" id="profileButton">
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#">Profile</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li id="classOption" class="selected"><a href="#" onclick="handleSidebarClick(event, 'classOption', 'Class')"><i class="fas fa-chalkboard-teacher"></i> <span>Class</span></a></li>
+                <li id="dashboardOption"><a href="dashboard.html" onclick="handleSidebarClick(event, 'dashboardOption', 'Dashboard')"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+                <li id="tasksOption"><a href="#" onclick="handleSidebarClick(event, 'tasksOption', 'Tasks')"><i class="fas fa-tasks"></i> <span>Tasks</span></a></li>
+                <li id="capstoneOption"><a href="#" onclick="handleSidebarClick(event, 'capstoneOption', 'Capstone')"><i class="fas fa-project-diagram"></i> <span>Capstone</span></a></li>
+                <li id="queriesOption"><a href="#" onclick="handleSidebarClick(event, 'queriesOption', 'Queries')"><i class="fas fa-question-circle"></i> <span>Queries</span></a></li>
+                <li id="requirementsOption"><a href="#" onclick="handleSidebarClick(event, 'requirementsOption', 'Requirements')"><i class="fas fa-file-alt"></i> <span>Requirements</span></a></li>
+                <li id="portfolioOption"><a href="#" onclick="handleSidebarClick(event, 'portfolioOption', 'Portfolio')"><i class="fas fa-folder-open"></i> <span>Portfolio – Submission</span></a></li>
+                <li id="applicationOption"><a href="#" onclick="handleSidebarClick(event, 'applicationOption', 'Application')"><i class="fas fa-briefcase"></i> <span>Application</span></a></li>
+                <li id="interviewTasksOption"><a href="#" onclick="handleSidebarClick(event, 'interviewTasksOption', 'Interview Tasks')"><i class="fas fa-tasks"></i> <span>Interview tasks</span></a></li>
+                <li id="leaveApplicationsOption"><a href="#" onclick="handleSidebarClick(event, 'leaveApplicationsOption', 'Leave Applications')"><i class="fas fa-calendar-alt"></i> <span>Leave-applications</span></a></li>
+                <li id="mockInterviewsOption"><a href="#" onclick="handleSidebarClick(event, 'mockInterviewsOption', 'Mock Interviews')"><i class="fas fa-microphone"></i> <span>Mock – Interviews</span></a></li>
+                <li id="certificateOption"><a href="#" onclick="handleSidebarClick(event, 'certificateOption', 'Certificate')"><i class="fas fa-certificate"></i> <span>Certificate</span></a></li>
+                <li id="testimonialOption"><a href="#" onclick="handleSidebarClick(event, 'testimonialOption', 'Testimonial')"><i class="fas fa-comment-alt"></i> <span>Testimonial</span></a></li>
+                <li id="leaderBoardOption"><a href="#" onclick="handleSidebarClick(event, 'leaderBoardOption', 'Leader Board')"><i class="fas fa-trophy"></i> <span>Leader Board</span></a></li>
+                <li id="syllabusOption"><a href="#" onclick="handleSidebarClick(event, 'syllabusOption', 'Syllabus')"><i class="fas fa-book"></i> <span>Syllabus</span></a></li>
+                <li id="placementBoardOption"><a href="#" onclick="handleSidebarClick(event, 'placementBoardOption', 'Placement Board')"><i class="fas fa-briefcase"></i> <span>Placement Board</span></a></li>
+            </ul>
+        </div>
+        <div class="content-container">
+            <div id="detailsContainer" class="details-container"></div>
+            <div id="timelineContainer" class="timeline-container"></div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

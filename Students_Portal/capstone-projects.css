@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Adjusted width to account for sidebar space */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: 80px;
+ 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.institution-name {
+    color: #333;
+    font-size: 30px;
+    margin: 0;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.student-name {
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 10px;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-button .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 80px);
+    width: 100%; /* Adjusted width to account for sidebar space */
+    box-sizing: border-box;
+/* Added margin to account for sidebar space */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-left: 70px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info span {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.card-marks {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
